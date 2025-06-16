@@ -4,48 +4,103 @@
   <meta charset="UTF-8">
   <title>Top 5 Movies</title>
   <style>
-    .movie-container {
-      text-align: center;
-    }
     .movie {
       display: inline-block;
+      text-align: center;
       margin: 10px;
     }
-    .movie img {
+    img {
       width: 200px;
-      height: auto;
+    }
+    form, table {
+      text-align: center;
+      margin: 30px auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">Top 5 Movies</h1>
-  <div class="movie-container">
+  <h1 style="text-align:center;">Top 5 Movies</h1>
+
+  <div style="text-align:center;">
     <div class="movie">
       <h3>The Shawshank Redemption</h3>
-      <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" alt="The Shawshank Redemption">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" alt="Shawshank">
     </div>
-
     <div class="movie">
       <h3>The Godfather</h3>
-      <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" alt="The Godfather">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" alt="Godfather">
     </div>
-
     <div class="movie">
       <h3>The Dark Knight</h3>
-      <img src="https://theconsultingdetectivesblog.com/wp-content/uploads/2014/06/the-dark-knight-original.jpg" alt="The Dark Knight">
+      <img src="https://theconsultingdetectivesblog.com/wp-content/uploads/2014/06/the-dark-knight-original.jpg" alt="Dark Knight">
     </div>
-
     <div class="movie">
       <h3>Pulp Fiction</h3>
       <img src="https://fullyfilmy.in/cdn/shop/products/POS-163-FRA-BLK_eec062d4-ebf6-4e81-8197-2a37f8d73815.jpg?v=1747995466" alt="Pulp Fiction">
     </div>
-
     <div class="movie">
       <h3>Forrest Gump</h3>
       <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg" alt="Forrest Gump">
     </div>
   </div>
-  
-  
+
+  <form>
+    <h2>Vote for Your Favorite Movie</h2>
+    
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    
+    <input type="password" name="password" placeholder="Enter Password" required><br><br>
+    
+    <select name="favorite" required>
+      <option value="">-- Select Movie --</option>
+      <option>The Shawshank Redemption</option>
+      <option>The Godfather</option>
+      <option>The Dark Knight</option>
+      <option>Pulp Fiction</option>
+      <option>Forrest Gump</option>
+    </select><br><br>
+
+    <textarea name="comment" rows="4" cols="30" placeholder="Your Comments"></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2 style="text-align:center;">Movie Details Table</h2>
+  <table>
+    <tr>
+      <th rowspan="2">Movie</th>
+      <th colspan="2">Details</th>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <th>Genre</th>
+    </tr>
+    <tr>
+      <td>The Shawshank Redemption</td>
+      <td>1994</td>
+      <td>Drama</td>
+    </tr>
+    <tr>
+      <td>The Godfather</td>
+      <td>1972</td>
+      <td>Crime, Drama</td>
+    </tr>
+    <tr>
+      <td>The Dark Knight</td>
+      <td>2008</td>
+      <td>Action, Crime</td>
+    </tr>
+
+  </table>
 </body>
 </html>
