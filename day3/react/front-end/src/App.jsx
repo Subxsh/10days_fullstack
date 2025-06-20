@@ -1,18 +1,31 @@
-import { useState } from 'react'
-
-import Welcome from './Welcome'
-
-//import './App.css'
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Faq from './pages/Faq';
+import State from './hooks/State';
+import Form from './hooks/Form';
+import Effect from './hooks/Effect';
+import Navbar from './components/navbar';
 
 function App() {
-
   return (
     <>
-      <h1>Hello</h1>
-      <Welcome name="React" />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/faq' element={<Faq />} />
+        <Route path='/state' element={<State />} />
+        <Route path='/form' element={<Form />} />
+        <Route path='/effect' element={<Effect />} />
+        <Route path='*' element={<h2>404 Page Not Found</h2>} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -4,7 +4,7 @@ const Welcome = (props) => {
   return (
     <div>
         
-        <p>Enjoy building your application!  {props.name}</p>
+        <p>Enjoy building your application!  {props.name} from {props.country}</p>
     </div>
   )
 }
