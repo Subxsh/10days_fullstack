@@ -7,7 +7,7 @@ import Faq from './pages/Faq';
 import State from './hooks/State';
 import Form from './hooks/Form';
 import Effect from './hooks/Effect';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Reducer from './hooks/Reducer';
 
 function App() {
