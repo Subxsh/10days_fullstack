@@ -1,9 +1,11 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import cors from 'cors';
-import mongoose, { Error } from 'mongoose';
 import {connectDB}  from './config/db.js';
 import User from './model/user.js';
 import Form from './model/form.js';
+import dotenv from 'dotenv';
+dotenv.config();
 const app= express();
 
 
